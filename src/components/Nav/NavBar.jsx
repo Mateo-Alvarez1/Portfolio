@@ -5,12 +5,13 @@ import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { useState } from "react";
+import soundClick from '../../assets/soundClick.wav'
 
 export const NavBar = () => {
   const [active, setActive] = useState("#");
   return (
     <nav>
-      <audio src="../../../src/assets/soundClick.wav" id="click-sound"></audio>
+      <audio src={soundClick} id="click-sound"></audio>
 
       <a
         href="#"
