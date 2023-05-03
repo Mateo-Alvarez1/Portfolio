@@ -1,0 +1,31 @@
+
+.button_container{
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+button {
+    width: 150px;
+    height: 45px;
+    border-radius: 5px ;
+    border: 1px solid;
+    border-color: var(--blue-color-soft);
+    margin-top: 25px;
+    font-size: 16px;
+    color: var(--blue-color-soft);
+}
+
+.button_outline {
+    background-color: transparent;
+}
+
+.button_outline:hover{
+    background-color: var(--blue-color-soft);
+    color: #000000;
+    transition: all 1s;
+}
+
+
+
