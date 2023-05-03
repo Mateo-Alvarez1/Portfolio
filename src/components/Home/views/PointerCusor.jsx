@@ -22,6 +22,7 @@ export const PointerCusor = () => {
   return (
     <>
       <div
+      className="mobile_cursor"
         style={{
           position: "absolute",
           backgroundColor: "var(--blue-color-soft-opacity)",
