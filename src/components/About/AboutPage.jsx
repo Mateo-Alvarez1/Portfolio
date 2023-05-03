@@ -1,11 +1,12 @@
 import { Buttons } from "../Home/views/Buttons";
+import about from '../../assets/about.png'
 import "./aboutPage.css";
 
 export const AboutPage = () => {
   return (
     <div className="about_container" id="about">
       <div>
-        <img className="about_img shakeY" src="../../../src/assets/about.png" alt="Mateo Alvarez" />
+        <img className="about_img shakeY" src={about} alt="Mateo Alvarez" />
       </div>
       <div className="about_container_texts">
         <div className="about_container_text">

@@ -2,7 +2,7 @@ import { Buttons } from "./views/Buttons";
 import "./homePage.css";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { AboutPage } from "../About/AboutPage";
-
+import home from '../../assets/home.png'
 
 export const HomePage = () => {
   return (
@@ -19,7 +19,7 @@ export const HomePage = () => {
       </div>
       <div>
         <div>
-          <img className="shake" src="../../../src/assets/home.png" alt=" Imagen sobre mi" />
+          <img className="shake" src={home} alt=" Imagen sobre mi" />
         </div>
 
         <div className="home_icons">
