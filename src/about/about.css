@@ -1,0 +1,139 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 200px 0px;
+  width: 100%;
+}
+
+.aboutContainer > div > h1 {
+  font-size: 50px;
+  color: #eded7c;
+  text-align: center;
+}
+
+.aboutContainer > div:nth-child(1) > img {
+  width: 280px;
+  margin-left: 30px;
+  filter: drop-shadow(-1px -1px 10px #f1ecec2d);
+  animation: slide 1s ease-in-out;
+}
+
+.buttons.position {
+  margin-left: 90px;
+  border: 1px solid #eded7c;
+}
+
+.buttons.position:hover {
+  background-color: #eded7c;
+  transition: all 0.5s;
+  color: #171717;
+}
+
+.aboutContainer > div > p {
+  font-size: 25px;
+  padding: 30px 70px;
+  text-align: center;
+  color: #fff;
+}
+
+.icon {
+  color: #045581;
+  font-size: 25px;
+  position: absolute;
+  left: 270px;
+  top: 1010px;
+  z-index: 100;
+  animation: brink 2s ease-in-out infinite;
+}
+
+.icon1 {
+  color: #333f4a;
+  font-size: 25px;
+  position: absolute;
+  left: 285px;
+  top: 1060px;
+  z-index: 200;
+  animation: brink 2s ease-in-out infinite;
+}
+
+@keyframes brink {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-900px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@media (900px < width) {
+  .aboutContainer {
+    flex-direction: row;
+  }
+
+  .aboutContainer > div:nth-child(1) {
+    width: 20%;
+    margin-left: 200px;
+  }
+
+  .aboutContainer > div:nth-child(2) {
+    width: 80%;
+    padding: 0 100px;
+  }
+
+  .buttons.position {
+    margin-left: 230px;
+  }
+  .aboutContainer > div:nth-child(1) > img {
+    width: 280px;
+    margin-left: -80px;
+  }
+
+  .icon {
+    left: 300px;
+    top: 1010px;
+  }
+
+  .icon1 {
+    left: 320px;
+    top: 1060px;
+  }
+}
+
+@media (1920px <= width) {
+  .buttons.position {
+    margin-left: 220px;
+  }
+  .aboutContainer > div:nth-child(2) {
+    width: 80%;
+    padding: 0 300px;
+  }
+  .aboutContainer > div:nth-child(1) > img {
+    width: 280px;
+    margin-left: 190px;
+  }
+  .icon {
+    left: 580px;
+    top: 1260px;
+  }
+  .icon1 {
+    left: 595px;
+    top: 1300px;
+  }
+}
