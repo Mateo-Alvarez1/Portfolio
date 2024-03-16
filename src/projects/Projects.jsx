@@ -1,5 +1,6 @@
 import "./projects.css";
 import clothingImg from "../assets/clothingAPI.png";
+import payment from "../assets/payment.png";
 const Projects = () => {
   const items = [
     {
@@ -9,6 +10,14 @@ const Projects = () => {
       img: clothingImg,
       link: "https://clothingapi.netlify.app",
       github: "https://github.com/Mateo-Alvarez1/ClothingApi",
+    },
+    {
+      id: 2,
+      title: "PaymentGateway",
+      subtitle: "The best payment gateway",
+      img: payment,
+      link: "https://paymengateway.netlify.app/",
+      github: "https://github.com/Mateo-Alvarez1/PaymentGatewayBack",
     },
   ];
 
